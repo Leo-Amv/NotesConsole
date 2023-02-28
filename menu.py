@@ -7,7 +7,7 @@ def start():
     command = input('Enter command:')
     match str.upper(command):
         case 'ADD':
-            print('foo')
+            create()
         case 'UPDATE':
             print('foo')
         case 'LIST':
