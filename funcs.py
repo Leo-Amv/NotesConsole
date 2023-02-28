@@ -73,7 +73,7 @@ def find_by_date():
     try:
         day = int(input('Day: '))
         month = int(input('Month: '))
-        year = int(input('Day: '))
+        year = int(input('Year: '))
         print('Founded notes: ')
         find_notes_by_date(day, month, year)
     except ValueError:
