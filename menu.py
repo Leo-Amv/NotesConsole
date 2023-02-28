@@ -20,3 +20,6 @@ def start():
             cmd_list()
         case 'EXIT':
             exit()
+        case _:
+            print('Command not found! Try again!')
+            start()
