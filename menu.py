@@ -2,7 +2,7 @@ from funcs import *
 
 
 def start():
-    print('\t---This is note app!---')
+    print('\t---This is note app version 1.0!---')
     cmd_list()
     flag = True
     while (flag):
