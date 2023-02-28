@@ -54,6 +54,8 @@ def find_by_id():
         flag = find_note_by_id(find_id)
         if flag == 1:
             print('--DONE--')
+        if flag == 0:
+            find_by_id()
     except ValueError:
         print('Incorrect id, try again!')
         find_by_id()
