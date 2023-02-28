@@ -59,12 +59,16 @@ def find_by_id():
         find_by_id()
 
 
-def list_notes():
-    print('Show all notes: \n')
-    list_all_notes()
+def find_by_keyword():
+    keyword = input('Enter keyword: ')
+    note = find_note_by_keyword(keyword)
+    if note != None:
+        print('--DONE--')
+    if note == None:
+        print('Note not found!')
 
 
-def date_note():
+def find_by_date():
     print('Enter date to find note: ')
     try:
         day = int(input('Day: '))
@@ -74,4 +78,9 @@ def date_note():
         find_notes_by_date(day, month, year)
     except ValueError:
         print('Incorrect date, try again!')
-        date_note()
+        find_by_date()
+
+
+def list_notes():
+    print('Show all notes: \n')
+    list_all_notes()
