@@ -9,14 +9,19 @@ def start():
         command = input('Enter command:')
         match str.upper(command):
             case 'ADD':
+                print("\033[H\033[J")
                 create()
             case 'UPDATE':
+                print("\033[H\033[J")
                 update_by_id()
             case 'LIST':
+                print("\033[H\033[J")
                 list_notes()
             case 'DELETE':
+                print("\033[H\033[J")
                 delete_by_id()
             case 'FIND':
+                print("\033[H\033[J")
                 choise = 0
                 while (choise < 1 or choise > 3):
                     choise = int(input(
@@ -30,6 +35,7 @@ def start():
                     else:
                         print('Incorrect data, try again!')
             case 'HELP':
+                print("\033[H\033[J")
                 cmd_list()
             case 'EXIT':
                 flag = False
